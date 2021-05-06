@@ -1,0 +1,164 @@
+:root{
+    --bg-color: #FCF8F3;
+    --heading-color: #3a3a3a;
+    --white: #fff;
+    --padding: 5px 15px;
+    --colorless: #D8D8D8;
+    --text-color: #898989;
+    --text-bg-color: #F4F5F7;
+}
+
+// Header start
+header{
+    background-color: var(--bg-color);
+    // Navigation start
+    .header{
+        padding: 10px 0;
+        .logo img{
+            width: 40% !important;
+        }
+        nav{
+            a{
+                color: var(--heading-color);
+            } 
+        }
+        form{
+            .form{
+                background: var(--white);
+                padding: var(--padding);
+                border: 1px solid var(--colorless);
+                img{
+                    width: 6%;
+                }
+                input.form-input{
+                    border: transparent;
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .personal-info{
+            ul{
+                li{
+                    a{
+                        img{
+                            width: 80%;
+                        }
+                        i{
+                            color: var(--heading-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider{
+        position: relative;
+        img{
+            height: 100%;
+        }
+        .slider-content{
+            background-color: var(--white);
+            position: absolute;
+            top: 90px;
+            left: 194px;
+            width: 330px;
+            padding: 40px 30px;
+            h1{
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 115%;
+                margin-bottom: 25px;
+            }
+            p{
+                color: var(--text-color);
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            a.btn{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    // Navigation end
+}
+
+// Main start
+// Basic info start
+#basic-info{
+    margin: 70px 0;
+    img{
+        width: 10%;
+        float: left;
+        margin: 5px;
+    }
+    .title{
+        float: left;
+        margin-left: 20px;
+    }
+}
+
+// Products start
+#products{
+    h2{
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+    .card{
+        position: relative;
+        .content{
+            background-color: var(--text-bg-color);
+            margin-top: -5px;
+            padding: 20px 15px;
+            h5{ 
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: var(--heading-color);
+            }
+            p, span{          
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 150%;
+                color: var(--text-color);
+            }
+        }
+        .image-info{
+            position: absolute;
+            top: 40px;
+            right: 30px;
+            .kind, .discount{
+                border: 1px solid transparent;
+                border-radius: 50%;
+                padding: 10px 6px;
+                opacity: 0.7;
+                span{
+                    font-size: 14px;
+                }
+            }
+            .discount{
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+// Rooms courusel start
+#rooms{
+    img{
+        height: 60%;
+    }
+}
+
+
+// @media (max-width: 1024px) {
+//     header form .form{
+//         display: none !important;
+//     }
+// }
+// Header end

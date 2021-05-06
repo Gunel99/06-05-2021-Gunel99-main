@@ -1,0 +1,44 @@
+// Default
+$container-size: 85%;
+
+// Main color
+$white: #fff;
+$heading-color: #3A3A3A;
+$text-color: #898989;
+$colorless:#D8D8D8;
+$bg-color: #FCF8F3;
+
+// Grid
+$column: 12;
+
+$screen-type: (
+    xs: 0,
+    sm: 480px,
+    md: 768px,
+    lg: 1024px
+);
+
+// Button
+$btn-primary: #007bff;
+$btn-secondary: #6c757d;
+$btn-success: #28a745;
+$btn-danger: #dc3545;
+$btn-warning: #ffc107;
+$btn-info: #17a2b8;
+$btn-light: #f8f9fa;
+$btn-dark: #343a40;
+$btn-transparent: transparent;
+$btn-bg-color: #E89F71;
+
+$color-themes: (
+    primary: $btn-primary,
+    secondary: $btn-secondary,
+    success: $btn-success,
+    danger: $btn-danger,
+    warning: $btn-warning,
+    info: $btn-info,
+    light: $btn-light,
+    dark: $btn-dark,
+    transparent: $btn-transparent,
+    orange: $btn-bg-color
+)

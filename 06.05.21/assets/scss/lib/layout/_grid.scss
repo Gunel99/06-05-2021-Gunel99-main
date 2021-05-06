@@ -1,0 +1,3 @@
+@each $key, $value in $screen-type {
+    @include column-size($key, $value);
+}

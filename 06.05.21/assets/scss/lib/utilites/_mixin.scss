@@ -1,0 +1,19 @@
+@mixin column-size($key, $value) {
+    // while is coded without media query
+    @for $i from 1 through $column {
+        .col-#{$key}-#{$i} {
+            flex-basis: calc(100% / #{$column} * #{$i});
+            padding: 10px;
+        }
+    }
+
+    // while is used with media query
+    @media (min-width: #{$value}) {
+        @for $i from 1 through $column {
+            .col-#{$key}-#{$i} {
+                flex-basis: calc(100% / #{$column} * #{$i}) !important;
+                padding: 10px;
+            }
+        }
+    }
+}

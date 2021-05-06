@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: $container-size;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
